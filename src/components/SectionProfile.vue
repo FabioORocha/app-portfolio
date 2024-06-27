@@ -7,12 +7,12 @@
           <h2 class="name">Fábio Oliveira da Rocha</h2>
           <h2 class="role">Desenvolvedor Front-End</h2>
   
-          <div class="social">
-            <a href="https://www.linkedin.com/in/fabiooliveiradarocha/" target="_blank" rel="noopener noreferrer">
+          <div class="btn">
+            <a href="https://www.linkedin.com/in/fabiooliveiradarocha/" class="inner-btn" target="_blank" rel="noopener noreferrer">
               <font-awesome-icon :icon="['fab', 'linkedin']" />
               <p>LinkedIn</p>
             </a>
-            <a href="https://github.com/FabioORocha" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/FabioORocha" class="inner-btn" target="_blank" rel="noopener noreferrer">
               <font-awesome-icon :icon="['fab', 'github']" />
               <p>GitHub</p>
             </a>
@@ -92,11 +92,11 @@
         font-weight: 400;
       }
 
-      .social{
+      .btn{
         display: flex;
         gap: 1rem;
 
-        a{
+        .inner-btn{
           display: flex;
           align-items: center;
           justify-content: center;
