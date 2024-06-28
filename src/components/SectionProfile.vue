@@ -49,8 +49,7 @@
   margin: auto;
   display: flex;
   align-items: center;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding: 0 5%;
   margin-bottom: 4rem;
   min-height: calc(100vh - 50px);
 }
@@ -61,9 +60,10 @@
   align-items: center;
   gap: 4rem;
   border: 1px solid gray;
-  padding: 4rem 0;
+  padding: 4rem 2rem;
   border-radius: 33px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  flex-wrap: wrap;
 }
 
 .innerimage {
@@ -94,6 +94,7 @@
 .btn {
   display: flex;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .inner-btn {
@@ -138,25 +139,48 @@ a svg {
   line-height: 1.5rem;
 }
 
+@media (max-width: 1024px) {
+  .card {
+    flex-direction: column;
+    padding: 4rem 1rem;
+    text-align: center;
+  }
+
+  .innertext {
+    max-width: 80%;
+  }
+}
+
 @media (max-width: 680px) {
   .container {
-    flex-direction: column;
     gap: 2rem;
     margin-top: 4rem;
     margin-bottom: 4rem;
   }
 
+  .card {
+    flex-direction: column;
+    padding: 4rem 1rem;
+  }
+
   .innerimage .image {
     margin: 0 auto;
-    overflow: hidden;
     width: 50%;
     height: auto;
     aspect-ratio: 1/1;
   }
 
   .innertext {
-    max-width: initial;
+    max-width: 100%;
     text-align: center;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .btn{
+    justify-content: center;
   }
 }
 </style>
