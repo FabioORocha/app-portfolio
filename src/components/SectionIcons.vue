@@ -11,8 +11,6 @@
       </div>
     </nav>
   </div>
-
-  <div class="construction">Em construção...</div>
 </template>
 
 
@@ -48,7 +46,6 @@ export default {
     align-items: center;
     padding-left: 5%;
     padding-right: 5%;
-    margin-bottom: 4rem;
   }
 
   .card {
@@ -82,8 +79,8 @@ export default {
   }
 
   .image{
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     &:hover{
       opacity: .8;
       transform: scale(1.05);
@@ -99,7 +96,6 @@ export default {
   @media (max-width: 680px) {
     .container{
       margin-top: 4rem;
-      margin-bottom: 4rem;
     }
 
     .card{
@@ -115,10 +111,6 @@ export default {
       grid-template-columns: 1fr 1fr 1fr;
       gap: 1.5rem;
     }
-  }
-
-  .construction{
-    margin-bottom: 4rem
   }
 
 </style>

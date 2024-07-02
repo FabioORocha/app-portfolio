@@ -50,7 +50,6 @@
   display: flex;
   align-items: center;
   padding: 0 5%;
-  margin-bottom: 4rem;
   min-height: calc(100vh - 50px);
 }
 
