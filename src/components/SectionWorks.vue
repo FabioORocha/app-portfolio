@@ -1,8 +1,8 @@
 <template>
   <div>
-    <nav class="container">
+    <section class="container">
       <div class="work">
-        <h2 class="title">Destaques Vnda</h2>
+        <h2 class="title">Meus trabalhos</h2>
         <div class="wrapper">
           <div class="item" v-for="img in images" :key="img.id">
             <a :href="img.link" class="inner-btn" target="_blank" rel="noopener noreferrer">
@@ -11,7 +11,7 @@
           </div>
         </div>
       </div>
-    </nav>
+    </section>
   </div>
 </template>
 
@@ -44,6 +44,7 @@
     align-items: center;
     padding-left: 5%;
     padding-right: 5%;
+    margin-top: 2rem;
   }
 
   .work {
@@ -52,10 +53,11 @@
     justify-content: center;
     align-items: center;
     border: 1px solid gray;
-    padding: 4rem 1rem;
+    padding: 4rem 5%;
     border-radius: 33px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     width: 100%;
+    background-color: #343A40;
   }
 
   .title{
@@ -97,10 +99,6 @@
   }
 
   @media (max-width: 680px) {
-    .container{
-      margin-top: 4rem;
-    }
-
     .card{
       width: 100%;
     }

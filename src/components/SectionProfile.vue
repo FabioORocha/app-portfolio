@@ -63,6 +63,7 @@
   border-radius: 33px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   flex-wrap: wrap;
+  background-color: #343A40;
 }
 
 .innerimage {
@@ -73,9 +74,6 @@
 
 .image {
   overflow: hidden;
-  border-radius: 50%;
-  width: 300px;
-  height: 300px;
 }
 
 .name {
@@ -153,20 +151,20 @@ a svg {
 @media (max-width: 680px) {
   .container {
     gap: 2rem;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 
   .card {
     flex-direction: column;
     padding: 4rem 1rem;
+    gap: 1rem;
   }
 
   .innerimage .image {
     margin: 0 auto;
     width: 50%;
     height: auto;
-    aspect-ratio: 1/1;
   }
 
   .innertext {
@@ -175,7 +173,7 @@ a svg {
   }
 
   .title {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
 
   .btn{

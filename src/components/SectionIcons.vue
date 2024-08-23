@@ -1,15 +1,15 @@
 <template>
   <div>
-    <nav class="container">
+    <section class="container">
       <div class="card">
-        <h2 class="title">Habilidades</h2>
+        <h2 class="title">Conhecimentos</h2>
         <div class="wrapper">
           <div class="item" v-for="img in images" :key="img.id">
             <img :src="img.srcImage" :alt="img.alt" class="image"/>
           </div>
         </div>
       </div>
-    </nav>
+    </section>
   </div>
 </template>
 
@@ -46,6 +46,9 @@ export default {
     align-items: center;
     padding-left: 5%;
     padding-right: 5%;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-top: 2rem;
   }
 
   .card {
@@ -58,6 +61,7 @@ export default {
     border-radius: 33px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     width: 100%;
+    background-color: #343A40;
   }
 
   .title{
@@ -95,7 +99,7 @@ export default {
 
   @media (max-width: 680px) {
     .container{
-      margin-top: 4rem;
+      margin-top: 2rem;
     }
 
     .card{

@@ -50,7 +50,6 @@
 
     padding-left: 5%;
     padding-right: 5%;
-    margin-bottom: 4rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -66,7 +65,7 @@
   .wrapper{
     width: 100%;
     display: flex;
-    margin-top: 4rem;
+    margin-top: 2rem;
   }
 
   .card{
@@ -80,6 +79,7 @@
     border: 1px solid gray;
     border-radius: 33px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #343A40;
 
     a{
       width: 100%;

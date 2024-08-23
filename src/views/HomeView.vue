@@ -4,8 +4,7 @@
     <SectionIcons />
     <SectionExperience />
     <SectionWorks />
-
-    <div class="construction">Em construção...</div>
+    <SectionProjects />
   </div>
 </template>
 
@@ -15,6 +14,7 @@ import SectionProfile from '@/components/SectionProfile.vue'
 import SectionIcons from '@/components/SectionIcons.vue'
 import SectionExperience from '@/components/SectionExperience.vue'
 import SectionWorks from '@/components/SectionWorks.vue'
+import SectionProjects from '@/components/SectionProjects.vue'
 
 export default {
   name: 'HomeView',
@@ -22,13 +22,15 @@ export default {
     SectionProfile,
     SectionIcons,
     SectionExperience,
-    SectionWorks
+    SectionWorks,
+    SectionProjects
   }
 }
 </script>
 
 <style scoped>
   .construction{
-    margin: 4rem auto
+    margin: 0 auto;
+    padding: 4rem auto;
   }
 </style>
