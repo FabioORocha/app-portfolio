@@ -20,16 +20,16 @@
     data() {
       return {
         images: [
-          { id: 0,  srcImage: require('../assets/01-afluente.png'), alt: 'afluente', link:'www.afluente.art' },
-          { id: 1,  srcImage: require('../assets/02-casakaua.png'), alt: 'casakaua', link:'www.casakaua.com.br' },
-          { id: 2,  srcImage: require('../assets/03-elisaatheniense.png'), alt: 'elisaatheniense', link:'www.elisaatheniense.com.br' },
-          { id: 3,  srcImage: require('../assets/04-gabardinacouro.png'), alt: 'gabardinacouro', link:'www.gabardinacouro.com' },
-          { id: 4,  srcImage: require('../assets/05-guriainspira.png'), alt: 'guriainspira', link:'www.guriainspira.com.br' },
-          { id: 5,  srcImage: require('../assets/06-dbz.png'), alt: 'dbz', link:'www.dbzjeans.com.br' },
-          { id: 6,  srcImage: require('../assets/07-oticas.png'), alt: 'oticas', link:'www.oticasbrasil.com.br' },
-          { id: 7,  srcImage: require('../assets/08-rosanajoias.png'), alt: 'rosanajoias', link:'www.rosanajoias.com.br' },
-          { id: 8,  srcImage: require('../assets/09-adoroit.png'), alt: 'adoroit', link:'www.adoroit.com.br' },
-          { id: 9,  srcImage: require('../assets/10-vanquisher.png'), alt: 'vanquisher', link:'www.vanquisher.com.br' },
+          { id: 0,  srcImage: require('../assets/01-afluente.png'), alt: 'afluente', link:'https://www.afluente.art' },
+          { id: 1,  srcImage: require('../assets/02-casakaua.png'), alt: 'casakaua', link:'https://www.casakaua.com.br' },
+          { id: 2,  srcImage: require('../assets/03-elisaatheniense.png'), alt: 'elisaatheniense', link:'https://www.elisaatheniense.com.br' },
+          { id: 3,  srcImage: require('../assets/04-gabardinacouro.png'), alt: 'gabardinacouro', link:'https://www.gabardinacouro.com' },
+          { id: 4,  srcImage: require('../assets/05-guriainspira.png'), alt: 'guriainspira', link:'https://www.guriainspira.com.br' },
+          { id: 5,  srcImage: require('../assets/06-dbz.png'), alt: 'dbz', link:'https://www.dbzjeans.com.br' },
+          { id: 6,  srcImage: require('../assets/07-oticas.png'), alt: 'oticas', link:'https://www.oticasbrasil.com.br' },
+          { id: 7,  srcImage: require('../assets/08-rosanajoias.png'), alt: 'rosanajoias', link:'https://www.rosanajoias.com.br' },
+          { id: 8,  srcImage: require('../assets/09-adoroit.png'), alt: 'adoroit', link:'https://www.adoroit.com.br' },
+          { id: 9,  srcImage: require('../assets/10-vanquisher.png'), alt: 'vanquisher', link:'https://www.vanquisher.com.br' },
         ]
       }
     }
