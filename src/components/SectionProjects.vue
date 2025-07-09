@@ -7,9 +7,7 @@
           <div class="foco">
             <h2 class="title">Projetos</h2>
             <div class="innerImage">
-              <a href="https://www.vnda.com.br/" class="inner-btn" target="_blank" rel="noopener noreferrer">
-                <img alt="Image vnda" src="../assets/peafoco.png" class="image">
-              </a>
+              <img alt="Image peafoco" src="../assets/peafoco.png" class="image">
             </div>
             <div class="innerText">
               <p class="textTitle">PEA FOCO - 1 anos</p>
