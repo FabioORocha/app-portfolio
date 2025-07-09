@@ -13,7 +13,7 @@
 import SectionProfile from '@/components/SectionProfile.vue'
 import SectionIcons from '@/components/SectionIcons.vue'
 import SectionExperience from '@/components/SectionExperience.vue'
-import SectionWorks from '@/components/SectionWorks.vue'
+//import SectionWorks from '@/components/SectionWorks.vue'
 import SectionProjects from '@/components/SectionProjects.vue'
 
 export default {
@@ -22,7 +22,7 @@ export default {
     SectionProfile,
     SectionIcons,
     SectionExperience,
-    SectionWorks,
+    //SectionWorks,
     SectionProjects
   }
 }

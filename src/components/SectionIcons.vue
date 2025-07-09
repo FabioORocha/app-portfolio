@@ -6,6 +6,7 @@
         <div class="wrapper">
           <div class="item" v-for="img in images" :key="img.id">
             <img :src="img.srcImage" :alt="img.alt" class="image"/>
+            <p class="txt-subtitle">{{ img.alt }}</p>
           </div>
         </div>
       </div>
@@ -21,16 +22,19 @@ export default {
       images: [
         { id: 0,  srcImage: require('../assets/html.png'), alt: 'html' },
         { id: 1,  srcImage: require('../assets/css.png'), alt: 'css' },
+        { id: 1,  srcImage: require('../assets/tailwind.png'), alt: 'tailwind' },
+        { id: 7,  srcImage: require('../assets/sass.png'), alt: 'sass' },
         { id: 2,  srcImage: require('../assets/javascript.png'), alt: 'javascript' },
         { id: 3,  srcImage: require('../assets/liquid.png'), alt: 'liquid' },
+        { id: 3,  srcImage: require('../assets/twig.png'), alt: 'twig' },
         { id: 4,  srcImage: require('../assets/react.png'), alt: 'react' },
         { id: 5,  srcImage: require('../assets/next.png'), alt: 'next' },
         { id: 6,  srcImage: require('../assets/vue.png'), alt: 'vue' },
-        { id: 7,  srcImage: require('../assets/sass.png'), alt: 'sass' },
         { id: 8,  srcImage: require('../assets/git.png'), alt: 'git' },
         { id: 9,  srcImage: require('../assets/github.png'), alt: 'github' },
         { id: 10, srcImage: require('../assets/gitlab.png'), alt: 'gitlab' },
-        { id: 11, srcImage: require('../assets/figma.png'), alt: 'figma' }
+        { id: 11, srcImage: require('../assets/figma.png'), alt: 'figma' },
+        { id: 12, srcImage: require('../assets/firebase.png'), alt: 'firebase' }
       ]
     }
   }
@@ -97,7 +101,14 @@ export default {
     padding-top: .5rem;
   }
 
-  @media (max-width: 680px) {
+  .txt-subtitle{
+    font-size: 1rem;
+    margin: 0;
+    margin-top: 10px;
+  }
+
+
+  @media (max-width: 1024px) {
     .container{
       margin-top: 2rem;
     }
@@ -108,12 +119,12 @@ export default {
     
     .item{
       margin-right: 0 !important;
+      margin-bottom: 1rem;
     }
 
     .wrapper{
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 1.5rem;
+      display: flex;
+      flex-wrap: wrap;
     }
   }
 

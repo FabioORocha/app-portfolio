@@ -1,142 +1,155 @@
 <template>
   <div>
-    <section class="container">
-      <div class="work">
-        <h2 class="title">Projetos recentes</h2>
-        <div class="wrapper">
-          <div class="item" v-for="img in images" :key="img.id">
-            <a :href="img.link" class="inner-img" target="_blank" rel="noopener noreferrer">
-              <img :src="img.srcImage" :alt="img.alt" class="image"/>
-            </a>
-            <div class="text">
-              <h4>{{ img.title }}</h4>
-              <p>{{  img.description }}</p>
-              <a :href="img.link" class="link" target="_blank" rel="noopener noreferrer">
-                Acesse aqui
+    <div class="container">
+      <div class="wrapper">
+        <div class="card">
+
+          <div class="foco">
+            <h2 class="title">Projetos</h2>
+            <div class="innerImage">
+              <a href="https://www.vnda.com.br/" class="inner-btn" target="_blank" rel="noopener noreferrer">
+                <img alt="Image vnda" src="../assets/peafoco.png" class="image">
               </a>
             </div>
+            <div class="innerText">
+              <p class="textTitle">PEA FOCO - 1 anos</p>
+              <ul class="description">
+                <li>Desenvolvimento e proposta de projeto.</li>
+                <li>Criação do wireframe utilizando o Adobe XD.</li>
+                <li>Desenvolvimento de uma aplicação mobile em React Native, HTML, Expo, JavaScript e CSS.</li>
+                <li>Projeto focado em atender necessidades de cadastro de pessoas para a ONG</li>
+              </ul>
+            </div>
+            <div class="wrapperItens">
+              <div class="item" v-for="img in imagesFoco" :key="img.id">
+                <img :src="img.srcImage" :alt="img.alt" class="itemImage"/>
+              </div>
+            </div>
           </div>
+
         </div>
       </div>
-    </section>
+    </div>
   </div>
 </template>
 
 <script>
   export default {
     data() {
-      return {
-        images: [
-          { id: 0,  srcImage: require('../assets/01-2bstore.png'), alt: '2bstore', link:'https://marketplace-sigma-eight.vercel.app/', title:'Marketplace', description:'Desenvolvido um marketplace com homepage, pagina de produto, carrinho funcional e postado na versel utilizando framework react.js' },
-        ]
-      }
+    return {
+      imagesFoco: [
+        { id: 0,  srcImage: require('../assets/react.png'), alt: 'react' },
+        { id: 1,  srcImage: require('../assets/firebase.png'), alt: 'firebase' },
+        { id: 2,  srcImage: require('../assets/github.png'), alt: 'github' },
+        { id: 3,  srcImage: require('../assets/adobexd.png'), alt: 'adobexd' },
+      ],
     }
+  }
   }
 </script>
 
 <style scoped>
+
   .container{
     max-width: 1280px;
-    margin: auto;
-    display: flex;
-    align-items: center;
+    margin: 0 auto;
+
     padding-left: 5%;
     padding-right: 5%;
-    margin-top: 2rem;
-  }
-
-  .work {
-    border: 1px solid gray;
-    padding: 4rem 5%;
-    border-radius: 33px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    width: 100%;
-    background-color: #343A40;
-    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .title{
     padding: 0 5%;
     margin-top: 2rem;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
   }
 
   .wrapper{
     width: 100%;
+    display: flex;
+    margin-top: 2rem;
   }
 
-  .item{
-    overflow: hidden;
+  .card{
+    width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0;
-    width: 100%;
-    height: 100%;
+    padding: 1rem;
 
-    &:nth-child(even){
-      flex-direction: row-reverse;
+    border: 1px solid gray;
+    border-radius: 33px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #343A40;
+
+    a{
+      width: 100%;
+      padding-bottom: 1rem;
     }
 
-    &:not(:last-child){
-      margin-bottom: 4rem;
+    .oasis{
+      margin-top: 2rem;
     }
   }
 
-  .inner-img{
+  .innerImage{
     width: 100%;
+    height: auto;
   }
 
   .image{
+    width: 20%;
+  }
+
+  .innerText{
+    padding-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    ul li{
+      margin-top: 12px;
+    }
+  }
+
+  .textTitle{
+    font-weight: 600;
+  }
+
+  .description{
+    margin: 0 auto;
+    max-width: 80%;
+  }
+
+  .technology{
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: opacity 0.3s ease;
-
-    &:hover{
-      opacity: .8;
-      transition: ease .3;
-    }
   }
 
-  .text{
-    padding: 0 5%;
-    max-width: 60%;
+  .wrapperItens{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem 0;
+    width: 100%;
+    flex-wrap: wrap;
   }
 
-  .link{
-    color: #fff;
-  }
-  
-  .subtitle{
-    font-size: 1rem;
-    padding-top: .5rem;
+  .item{
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 2rem;
   }
 
-  @media (max-width: 680px) {
-
-    .card{
-      width: 100%;
-    }
-    
-    .item{
-      flex-direction: column;
-      margin-right: 0 !important;
-
-      &:nth-child(even){
-        flex-direction: column;
-      }
-    }
-
-    .text{
-      max-width: 100%;
-    }
-
-    .wrapper{
-      flex-direction: column;
-      gap: 1.5rem;
-    }
+  .itemImage{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
   }
-
 
 </style>
