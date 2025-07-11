@@ -26,7 +26,7 @@
             Estou buscando novos desafios e oportunidades como Desenvolvedor Front-End!
           </p>
           <p class="content">
-            Tenho dois anos de experiência como desenvolvedor front-end em uma empresa focada em e-commerces, conquistei habilidades para criar interfaces dinâmicas, responsivas e alinhadas aos propósitos de diversas lojas.
+            Tenho mais de três anos de experiência como desenvolvedor front-end em empresas focadas em e-commerces, conquistei habilidades para criar interfaces dinâmicas, responsivas e alinhadas aos propósitos de diversas lojas.
           </p>
           <p class="content">
           Trabalho com foco em refletir a essência de cada marca e impulsionar o sucesso comercial online.
